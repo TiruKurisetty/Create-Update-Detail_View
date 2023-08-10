@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School_Details</title>
+</head>
+<body>
+    <center>
+        <h1>School_Details</h1>
+            <h1>Name of School is {{schoolD.scname}} </h1>
+            <h1>Principal Of School {{schoolD.scprinciple}} </h1>
+            <h1>Location Of School {{schoolD.sclocation}} </h1>
+
+            <h1>Student Details are {{schoolD.scname}}</h1>
+
+            {% for i in schoolD.king.all %}
+                <h5>Name of School List is {{i.sname}} </h5>
+                <h5>Age of the Student is {{i.sage}} </h5>
+            {% endfor %}
+
+            <a href="{% url 'update' pk=schoolD.pk %}">update</a>
+    </center>
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
